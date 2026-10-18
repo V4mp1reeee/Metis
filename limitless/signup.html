@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffdf8">
+  <title>Create account — Metis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <header class="auth-nav">
+    <a class="brand" href="index.html"><img class="brand-logo" src="metis-logo.png" alt=""> Metis</a>
+    <a href="signin.html">Already a member? <strong>Sign in</strong></a>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-story" aria-label="Get your crew together">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1500&q=85" alt="Friends spending time together outside">
+      <div class="auth-story-copy">
+        <p class="kicker">Make room for real life</p>
+        <h1>Your people.<br>Out there.</h1>
+        <p>Good plans start with one small nudge.</p>
+      </div>
+    </section>
+    <section class="auth-form-wrap">
+      <form class="auth-form" data-auth-form>
+        <p class="kicker">Start something good</p>
+        <h2>Create your account</h2>
+        <p class="auth-intro">Bring your crew together and make tonight count.</p>
+        <label for="signup-name">Your name</label>
+        <input id="signup-name" name="name" autocomplete="name" placeholder="Your name" required>
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="signup-password">Password</label>
+        <input id="signup-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required>
+        <button class="btn btn-fill auth-submit" type="submit">Create account</button>
+        <p class="auth-notice" data-auth-notice role="status" aria-live="polite">Account access isn't connected in this demo yet.</p>
+        <p class="auth-switch">Already have an account? <a href="signin.html">Sign in</a></p>
+      </form>
+    </section>
+  </main>
+  <script src="auth.js"></script>
+</body>
+</html>
